@@ -7,12 +7,19 @@ class Category extends REST_Controller {
     function __construct()
     {
         parent::__construct();
-        $this->load->model(array('category_model', 'product_model'));
+        $this->load->model(array('category_model'));
     }
 
 
     public function list_get(){
-        $category = $this->category_model->get_all_by_type();
+        $category = $this->category_model->get_all();
+        foreach ($category as $categories) {
+            $data[] = array(
+                'category_ID' => $categories->category_ID,
+                'category_name' => $categories->category_name,
+                'category_image' => $categories->category_image,
+            );
+        }
         if(!empty ($category)){
             $message = [
                 'error' => false,

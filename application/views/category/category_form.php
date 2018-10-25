@@ -21,7 +21,7 @@ $this->load->view('template/sidebar');
     
     <div class="box" style="padding : 15px">
         <h2 style="margin-top:0px"><?php echo $button ?> Category </h2>
-        <form action="<?php echo $action; ?>" method="post">
+        <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
 	    <div class="form-group">
             <label for="varchar">Category Name <?php echo form_error('category_name') ?></label>
             <input type="text" class="form-control" name="category_name" id="category_name" placeholder="Category Name" value="<?php echo $category_name; ?>" required/>

@@ -178,7 +178,8 @@ class Category extends CI_Controller
         $config['max_width']  = '5000'; //lebar maksimum 5000 px
         $config['max_height']  = '5000'; //tinggi maksimu 5000 px
         $this->upload->initialize($config);
-        
+        log_message('debug',print_r($_FILES,TRUE));
+
         if($_FILES['category_image']['name'])
         {
             $filename = $_FILES['category_image']['name'];
@@ -191,8 +192,6 @@ class Category extends CI_Controller
                 $data = array(
                     'category_image' => 'assets/uploads/' .$filename,
                     'category_name' => $this->input->post('category_name',TRUE),
-                    'product_category' => $this->input->post('product_category',TRUE),
-         
                 );
 
                 $this->Category_model->insert($data); //akses model untuk menyimpan ke database
