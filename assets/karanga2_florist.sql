@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.7
+-- version 4.8.0
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Waktu pembuatan: 24 Okt 2018 pada 22.31
--- Versi server: 5.7.23-log
--- Versi PHP: 5.6.30
+-- Host: 127.0.0.1
+-- Waktu pembuatan: 25 Okt 2018 pada 16.58
+-- Versi server: 10.1.31-MariaDB
+-- Versi PHP: 7.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -39,18 +39,18 @@ CREATE TABLE `category` (
 --
 
 INSERT INTO `category` (`category_ID`, `category_name`, `category_image`) VALUES
-(1, 'Bouquete', NULL),
-(2, 'Bunga Parcel', NULL),
-(3, 'Bunga Ucapan', NULL),
-(4, 'Pernikahan', NULL),
-(5, 'Bunga Artificial', NULL),
-(6, 'Bunga Dekorasi', NULL),
-(7, 'Bunga Standing', NULL),
-(8, 'Bunga Krans', NULL),
-(9, 'Kelahiran', NULL),
-(10, 'Duka Cita', NULL),
-(11, 'Ulang Tahun', NULL),
-(12, 'Love Romance', NULL);
+(1, 'Bouquete', 'assets/uploads/category.jpg'),
+(2, 'Bunga Parcel', 'assets/uploads/category.jpg'),
+(3, 'Bunga Ucapan', 'assets/uploads/category.jpg'),
+(4, 'Pernikahan', 'assets/uploads/category.jpg'),
+(5, 'Bunga Artificial', 'assets/uploads/category.jpg'),
+(6, 'Bunga Dekorasi', 'assets/uploads/category.jpg'),
+(7, 'Bunga Standing', 'assets/uploads/category.jpg'),
+(8, 'Bunga Krans', 'assets/uploads/category.jpg'),
+(9, 'Kelahiran', 'assets/uploads/category.jpg'),
+(10, 'Duka Cita', 'assets/uploads/category.jpg'),
+(11, 'Ulang Tahun', 'assets/uploads/category.jpg'),
+(12, 'Love Romance', 'assets/uploads/category.jpg');
 
 -- --------------------------------------------------------
 
